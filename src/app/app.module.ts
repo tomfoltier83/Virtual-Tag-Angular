@@ -13,12 +13,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 import { HomePageComponent } from './home-page/home-page.component';
 import { LogPageComponent } from './log-page/log-page.component';
+import { SellNftComponent } from './sell-nft/sell-nft.component';
+import { BuyNftComponent } from './buy-nft/buy-nft.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomePageComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'signin', component: SigninComponent },
-  { path: '', component: LogPageComponent }
+  { path: '', component: LogPageComponent },
+  { path: 'home/sell', component: SellNftComponent },
+  { path: 'home/buy', component: BuyNftComponent },
 ];
 
 @NgModule({
@@ -28,6 +32,8 @@ const appRoutes: Routes = [
     SignupComponent,
     HomePageComponent,
     LogPageComponent,
+    SellNftComponent,
+    BuyNftComponent,
   ],
   imports: [
     BrowserModule,

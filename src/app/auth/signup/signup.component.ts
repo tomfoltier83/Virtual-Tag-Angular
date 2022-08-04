@@ -25,7 +25,7 @@ import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
   </body>
   `,
   styles: [
-    'body {background: linear-gradient(145deg, rgba(0,0,0,1) 0%, rgba(83,83,83,1) 100%); display: flex; justify-content: center; align-items: center; flex-direction: column;}',
+    'body {background: linear-gradient(145deg, rgba(0,0,0,1) 0%, rgba(83,83,83,1) 100%); display: flex; justify-content: center; align-items: center; flex-direction: column; height: 100vh}',
     'h1 {color: white; font-family: Dosis; margin-bottom: 30px; font-size: 25px}',
     'img { height: 120px; margin-top: 30px}',
     'label {color: white; display: block; text-align: center;}',

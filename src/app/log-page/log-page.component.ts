@@ -13,7 +13,7 @@ import { Component, OnInit } from '@angular/core';
   </body>
   `,
   styles: [
-    'body {background: linear-gradient(145deg, rgba(0,0,0,1) 0%, rgba(83,83,83,1) 100%); display: flex; justify-content: center; align-items: center; flex-direction: column;}',
+    'body {background: linear-gradient(145deg, rgba(0,0,0,1) 0%, rgba(83,83,83,1) 100%); display: flex; justify-content: center; align-items: center; flex-direction: column; height: 100vh}',
     'h1 {color: white; font-family: Dosis; letter-spacing: 8px; margin: 30px 0px; font-size: 25px}',
     'img { height: 120px; margin-top: 30px}',
     '.log {text-decoration: none; display: block; border: solid 3px; padding: 20px; text-align: center; width: 300px; margin-bottom: 30px; border-image: linear-gradient(150deg, rgba(255,138,0,1) 0%, rgba(239,215,0,1) 100%); border-image-slice: 1;}',

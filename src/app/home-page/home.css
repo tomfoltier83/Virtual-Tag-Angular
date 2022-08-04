@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Dosis';
+}
+.header {
+  background: black;
+  padding-top: 30px;
+}
+img {
+  height: 120px;
+  margin-top: 30px;
+  margin: auto;
+  display: block
+}
+.main__title {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+.dynamic-txts {
+  margin-left: 15px;
+  line-height: 90px;
+  height: 90px;
+  overflow: hidden;
+}
+.static-txt {
+  font-size: 60px;
+  font-weight: 400;
+}
+.dynamic-txts li {
+  list-style: none;
+  font-size: 60px;
+  font-weight: 500;
+  color: orange;
+  position: relative;
+  top: 0;
+  animation: slide 9s steps(3) infinite;
+}
+@keyframes slide {
+  100% {
+    top: -270px;
+  }
+}
+.dynamic-txts li span {
+  position: relative;
+}
+.dynamic-txts li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-left:  2px solid orange;
+  animation: typing 3s infinite cubic-bezier(0, 0, 0, 1);
+  background: white;
+}
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
+.main__section {
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+}
+.main__buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 30px;
+}
+.main__buttons a {
+  padding: 20px 50px;
+  color: white;
+  text-decoration: none;
+  display: block;
+  border: solid 3px;
+  border-image: linear-gradient(150deg, rgba(255,138,0,1) 0%, rgba(239,215,0,1) 100%);
+  border-image-slice: 1;
+  margin-bottom: 30px;
+  transition: .2s ease-in-out 0s;
+}
+.main__buttons a:hover {
+  transform: scale(1.25);
+  background: linear-gradient(150deg, rgba(255,138,0,1) 0%, rgba(239,215,0,1) 100%);
+  border: 0px;
+}
